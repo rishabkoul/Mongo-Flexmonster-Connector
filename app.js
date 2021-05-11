@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 app.use('/mongo', require('./monog.js'));
 
-var port = 9204;
+var port = process.env.PORT || 9204;
 app.listen(port, () => {
     console.log('Example app listening at http://localhost:${port}')
 });
