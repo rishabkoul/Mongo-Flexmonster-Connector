@@ -5,7 +5,7 @@ const fm_mongo_connector = require("flexmonster-mongo-connector");
 let dbo = null;
 let _apiReference = null; // it’ll be the Connector instance
 
-mongodb.MongoClient.connect("mongodb+srv://admin:5eP6jc3GOC15BFnd@cluster0.eyj0g.mongodb.net/ecommerse?retryWrites=true&w=majority", {
+mongodb.MongoClient.connect("mongodb+srv://admin:admin@cluster0.eyj0g.mongodb.net/ecommerse?retryWrites=true&w=majority", {
     useNewUrlParser: true
     }, (err, db) => {
         if (err)
